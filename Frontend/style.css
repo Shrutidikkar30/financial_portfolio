@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+  
+.navbar {
+    background-color: #087685 !important;
+}
+
+.navbar a, .navbar-nav .nav-link {
+    color: white !important; /* Ensure text color is white */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white !important; /* Override any other text color */
+}
+
+.navbar-nav .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px; /* Add some space between the links and the image */
+}
+
+/* Buy/Sell Section */
+#buy-sell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#buy-sell h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+}
+
+.buy, .sell {
+    padding: 15px 25px;
+    background-color: #427af3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.buy:hover, .sell:hover {
+    background-color: #45a049;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.modal-header {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Style the modal form */
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form input,
+.modal-form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.modal-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.modal-form button:hover {
+    background-color: #45a049;
+}
+
+/* Cancel button styles */
+.cancel-btn {
+    background-color: #f44336 !important; /* Red color for Cancel */
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.cancel-btn:hover {
+    background-color: #da190b !important; /* Darker red on hover */
+}
+.table-container {
+    max-height: 500px; /* adjust as needed */
+    overflow-y: auto;  /* vertical scroll */
+    overflow-x: auto;  /* horizontal scroll (if needed) */
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  canvas {
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+  }
